@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-ReproducerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ReproducerApp.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		25F05ECD2ED5C46900AB26F6 /* RCTCustomNativeComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F05ECC2ED5C46900AB26F6 /* RCTCustomNativeComponent.m */; };
+		759407E12638C83BD7324473 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,6 +20,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReproducerApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReproducerApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ReproducerApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		25F05ECB2ED5C46900AB26F6 /* ReproducerApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReproducerApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		25F05ECC2ED5C46900AB26F6 /* RCTCustomNativeComponent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = RCTCustomNativeComponent.m; sourceTree = "<group>"; };
+		25F05ECE2ED5C48000AB26F6 /* RCTCustomNativeComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCustomNativeComponent.h; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ReproducerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReproducerApp.debug.xcconfig"; path = "Target Support Files/Pods-ReproducerApp/Pods-ReproducerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ReproducerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReproducerApp.release.xcconfig"; path = "Target Support Files/Pods-ReproducerApp/Pods-ReproducerApp.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ReproducerApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReproducerApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +55,16 @@
 			name = ReproducerApp;
 			sourceTree = "<group>";
 		};
+		25F05ECA2ED5C45100AB26F6 /* CustomNativeComponent */ = {
+			isa = PBXGroup;
+			children = (
+				25F05ECE2ED5C48000AB26F6 /* RCTCustomNativeComponent.h */,
+				25F05ECC2ED5C46900AB26F6 /* RCTCustomNativeComponent.m */,
+				25F05ECB2ED5C46900AB26F6 /* ReproducerApp-Bridging-Header.h */,
+			);
+			path = CustomNativeComponent;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +84,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				25F05ECA2ED5C45100AB26F6 /* CustomNativeComponent */,
 				13B07FAE1A68108700A75B9A /* ReproducerApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -130,7 +146,7 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 2600;
 					};
 				};
 			};
@@ -159,6 +175,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				759407E12638C83BD7324473 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+				25F05ECD2ED5C46900AB26F6 /* RCTCustomNativeComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +291,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReproducerApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomNativeComponent/ReproducerApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -300,6 +319,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReproducerApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomNativeComponent/ReproducerApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -374,7 +394,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -439,7 +462,9 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

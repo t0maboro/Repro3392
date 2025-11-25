@@ -9,6 +9,19 @@
     "start": "react-native start",
     "test": "jest"
   },
+  "codegenConfig": {
+    "name": "AppSpec",
+    "type": "components",
+    "jsSrcsDir": "specs",
+    "android": {
+      "javaPackageName": "com.customnativecomponent"
+    },
+    "ios": {
+      "componentProvider": {
+        "CustomNativeComponent": "RCTCustomNativeComponent"
+      }
+    }
+  },
   "dependencies": {
     "react": "19.1.1",
     "react-native": "0.82.1",
